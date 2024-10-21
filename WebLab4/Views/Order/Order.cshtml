@@ -1,0 +1,12 @@
+﻿@model OrderItem
+
+<form action="/Order/Order" method="post">
+    <label for="fooditem" asp-for="FoodItem">FoodItem : </label>
+    <input type="text" asp-for="FoodItem" id="name" name="fooditem" placeholder="Enter  FoodItem : " required>
+    <br><br>
+    <label for="quantity" asp-for="Quantity">Quantity : </label>
+    <input type="number" asp-for="Quantity" id="email" name="quantity" placeholder="Enter Quantity : " required>
+    <br><br>
+    <input type="submit" value="submit">
+
+</form>
